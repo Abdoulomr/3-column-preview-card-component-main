@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cards {
+    display: flex;
+    width: 250px;
+    margin: 80px auto;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0 35px;
+    padding: 0;
+}
+
+.card-description {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 30px auto;
+    width: 180px;
+}
+
+
+/*SEDANS-STYLING*/
+
+.sedans-card {
+    width: 250px;
+    height: 350px;
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+}
+
+.sedans-icon {
+    height: 30px;
+    margin: 35px;
+}
+
+.sedans-card-button {
+    border: 2px solid white;
+    color: hsl(31, 77%, 52%);
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin: 0 35px;
+    cursor: pointer;
+}
+
+
+
+
+/*SUVS-STYLING*/
+
+.suvs-card {
+    width: 250px;
+    height: 350px;
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs-icon {
+    height: 30px;
+    margin: 35px;
+}
+
+.suvs-card-button {
+    border: 2px solid white;
+    color: hsl(184, 100%, 22%);
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin: 0 35px;
+    cursor: pointer;
+}
+
+
+
+/*LUXURY-STYLING*/
+
+.luxury-card {
+    width: 250px;
+    height: 350px;
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 8px 8px;
+}
+
+.luxury-icon {
+    height: 30px;
+    margin: 35px;
+}
+
+.luxury-card-button {
+    border: 2px solid white;
+    color: hsl(179, 100%, 13%);
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin: 0 35px;
+    cursor: pointer;
+}
+
+
+
+
+.attribution {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 11px;
+    width: fit-content;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*
+
+
+
+
+
+
+
+BIGGER SCREENS
+
+
+
+
+
+
+
+
+
+*/
+
+@media screen and (min-width: 750px) {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    h2 {
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin: 0 35px;
+        padding: 0;
+    }
+
+    .card-description {
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.7;
+        margin: 30px auto;
+        width: 180px;
+        line-height: 18px;
+    }
+
+
+    /*SEDANS-STYLING*/
+
+    .sedans-card {
+        width: 250px;
+        height: 380px;
+        color: white;
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 8px 0 0 8px;
+    }
+
+    .sedans-icon {
+        height: 30px;
+        margin: 35px;
+    }
+
+    .sedans-card-button {
+        border: 2px solid white;
+        color: hsl(31, 77%, 52%);
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 25px 35px;
+    }
+
+    .sedans-card-button:hover {
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 35px;
+        transition: 0.7s;
+        margin: 25px 35px;
+    }
+
+
+    /*SUVS-STYLING*/
+
+    .suvs-card {
+        width: 250px;
+        height: 380px;
+        color: white;
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    .suvs-icon {
+        height: 30px;
+        margin: 35px;
+    }
+
+    .suvs-card-button {
+        border: 2px solid white;
+        color: hsl(184, 100%, 22%);
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 25px 35px;
+    }
+
+    .suvs-card-button:hover {
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 25px 35px;
+        transition: 0.7s;
+    }
+
+    /*LUXURY-STYLING*/
+
+    .luxury-card {
+        width: 250px;
+        height: 380px;
+        color: white;
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 8px 8px 0;
+    }
+
+    .luxury-icon {
+        height: 30px;
+        margin: 35px;
+    }
+
+    .luxury-card-button {
+        border: 2px solid white;
+        color: hsl(179, 100%, 13%);
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 25px 35px;
+    }
+
+    .luxury-card-button:hover {
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 25px 35px;
+        transition: 0.7s;
+    }
+
+
+    .attribution {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 10px;
+        font-size: 11px;
+        width: fit-content;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+}
